@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-gap: 64px;
@@ -17,12 +21,43 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-with-narrow {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
-.rainbow-img {
-    width: 100%;
+.responsive-img {
+    display: block;
+    max-width: 100%;
+}
+
+.card {
+    background: white;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 30px 30px;
+}
+
+.btn {
+    background-color: #14334B;
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px;
 }
 
 header {
@@ -73,8 +108,12 @@ header a {
 
 section {
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 100px 0;
+    max-width: 100%;
+    padding: 100px;
+}
+
+section.secondary {
+    background: #f8f8f8;
 }
 
 
@@ -101,11 +140,29 @@ main h3 {
     margin: 0;
 }
 
+main h4 {
+    color: #14334B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+main h5 {
+    color: #14334B;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
 main p {
+    color: #14334B;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    margin: 0;
+    line-height: 1.5;
+    opacity: 0.7;
 
 }
 
