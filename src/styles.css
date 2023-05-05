@@ -8,6 +8,23 @@ body {
     margin: 0 auto;
 }
 
+.grid {
+    display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.rainbow-img {
+    width: 100%;
+}
+
 header {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url("../images/ravenel-sunrise.jpg");
     background-repeat: no-repeat;
@@ -54,24 +71,52 @@ header a {
     text-transform: uppercase;
 }
 
+section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 100px 0;
+}
+
+
+main {
+    background-color: white;
+}
+
+main h2 {
+    color: #14334B;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+main h3 {
+    color: #14334B;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+
+}
+
 footer {
     color: white;
     background-image: linear-gradient(rgba(20, 51, 75, 0.9), rgba(20, 51, 75, 0.9)), url("../images/skyline-chs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 20px;
-}
 
-section {
-    margin: 0 auto;
-    max-width: 1200px;
-}
 
 footer h3 {
     font-size: 20px;
@@ -121,5 +166,14 @@ footer a {
 
     header a {
         font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
     }
 }
