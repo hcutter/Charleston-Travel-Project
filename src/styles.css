@@ -183,6 +183,50 @@ main p {
 
 }
 
+table {
+    border-spacing: 20px;
+    width: 100%;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+td {
+    background-size: cover;
+    background-repeat: none;
+    height: 300px;
+    min-width: 300px;
+}
+
+.img-1 {
+    background-image: url("../table-images/spire-chs.png");
+}
+
+.img-2 {
+    background-image: url("../table-images/night-ravenel.png");
+}
+
+.img-3 {
+    background-image: url("../table-images/chs-christmas.jpg");
+}
+
+.img-4 {
+    background-image: url("../table-images/dramatic-ravenel.png");
+}
+
+.img-5 {
+    background-image: url("../table-images/boat-ravenel.jpg");
+}
+
+.img-6 {
+    background-image: url("../table-images/dolphins.png");
+}
+
+.img-7 {
+    background-image: url("../table-images/ravenel-sunset.png");
+}
+
 footer {
     color: white;
     background-image: linear-gradient(rgba(20, 51, 75, 0.9), rgba(20, 51, 75, 0.9)), url("../images/skyline-chs.jpg");
@@ -225,37 +269,38 @@ footer a {
         line-height: 1;
         padding: 60px 0;
     }
-
+    
     header h1 {
         font-size: 48px;
     }
-
+    
     header h2 {
         font-size: 20px;
     }
-
+    
     header h3 {
         font-size: 12px;
     }
-
+    
     header a {
         font-size: 12px;
     }
-
+    
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 32px;
     }
-
+    
     section {
         padding: 30px;
     }
-
+    
     .card-header img {
         display: none;
     }
-
+    
     .embed {
         aspect-ratio: 16 / 9;
     }
+
 }
